@@ -50,6 +50,6 @@ const root = `${__dirname}/public`;
 app.use(express.static(root));
 app.use(fallback('index.html', { root }));
 
-app.listen(APP_PORT, () => {
+app.listen(process.env.PORT || APP_PORT, () => {
   console.log(`App is now running on http://localhost:${APP_PORT}`);
 });
