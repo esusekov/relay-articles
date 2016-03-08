@@ -2,7 +2,7 @@
 
 Based on [relay-starter-kit](https://github.com/relayjs/relay-starter-kit) repo
 
-### [Demo](https://google.com)
+### [Demo](http://relay-articles.herokuapp.com/)
 
 
 ## Installation

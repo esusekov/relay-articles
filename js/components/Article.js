@@ -14,8 +14,8 @@ class Article extends React.Component {
     return (
       <div className="full-article">
         <h1>{title}</h1>
-        <img src={image} />
-        <span>{content}</span>
+        <img className="full-article-image" src={image} />
+        <span className="full-article-content">{content}</span>
       </div>
     );
   }

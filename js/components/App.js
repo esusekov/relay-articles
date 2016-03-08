@@ -49,7 +49,7 @@ export class App extends React.Component {
           filteredPreviews.map(preview => {
             const { node: item } = preview;
             return (
-              <div
+              <Link to={`/article/${item.articleId}`}
                 className="article-preview"
                 key={item.id}
               >
@@ -57,8 +57,11 @@ export class App extends React.Component {
                   className="article-preview-image"
                   src={item.preview}
                 />
-                <Link to={`/article/${item.articleId}`} className="article-preview-title">{item.title}</Link>
-              </div>
+                <div className="article-description">
+                  <span className="article-preview-title">{item.title}</span>
+                  <span className="article-preview-type">{item.type}</span>
+                </div>
+              </Link>
             );
           })
         }
